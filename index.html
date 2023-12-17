@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer Component Order Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Computer Component Order Form</h1>
+  </header>
+  
+  <main>
+    <form id="orderForm">
+      <label for="componentType">Select Component Type:</label>
+      <select id="componentType" name="componentType">
+        <option value="cpu">CPU</option>
+        <option value="gpu">GPU</option>
+        <option value="ram">RAM</option>
+        <option value="storage">Storage</option>
+      </select>
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="1" value="1">
+      
+      <button type="button" onclick="addToCart()">Add to Cart</button>
+    </form>
+
+    <div id="cart">
+      <h2>Shopping Cart</h2>
+      <ul id="cartItems">
+        <!-- Cart items will be dynamically added here -->
+      </ul>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
